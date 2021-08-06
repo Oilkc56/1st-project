@@ -1,0 +1,35 @@
+import random
+
+def op():
+    print('Enter s for sister')
+    print('Enter p for paper')
+    print('Enter h for hammer')
+    user = str(input('Enter ur choice :'))
+    bot = random.choice('sph')
+    if user == bot :
+        print('!!DRAW!!')
+    elif user == 's' and bot == 'p' :
+        print('The winner is !!USER!!')
+        print('Bot is', bot)
+    elif user == 'p' and bot == 'h' :
+        print('The winner is !!USER!!')
+        print('Bot is', bot)
+    elif user == 'h' and bot == 's' :
+        print('Bot is', bot)
+        print('The winner is !!USER!!')
+    else:
+        print('Bot is',bot)
+        print('The winner is !!BOT!!')
+
+
+def main():
+    print('♥-Welcome to my system-♥')
+    ok_u = str(input('Enter ok to run this program :'))
+    proceed = 'ok'
+    if proceed == ok_u :
+        op()
+    else:
+        print('...ok')
+        print('♦Sayonara bro♦')
+if __name__ == '__main__':
+    main()
